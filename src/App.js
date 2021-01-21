@@ -3,12 +3,13 @@ import React from 'react';
 import myPhoto from './myPhoto.jpg'
 
 class App extends React.Component {
-  
-  state = { person : {fullName :"My Full Name is Marwen Tayari",bio :"I am from Tunisia ,I live in Hammam Sousse and I like football and going to gym",
+  constructor (){
+    super();
+  this.state = { person : {fullName :"My Full Name is Marwen Tayari",bio :"I am from Tunisia ,I live in Hammam Sousse and I like football and going to gym",
               imgSrc: myPhoto,
               profession : "I am a Mechatronics Engineer very interested in web development" ,
   } ,show : false , seconds : 0, minutes: 0,hours : 0};
-   
+  }
 toggleDiv = () => { 
   this.setState({show:!this.state.show})
 }
